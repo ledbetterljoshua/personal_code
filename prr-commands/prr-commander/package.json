@@ -1,0 +1,23 @@
+{
+  "name": "prr-commander",
+  "version": "0.0.1",
+  "description": " A command-line tool for bazaarvoice prr",
+  "main": "index.js",
+  "author": "Joshua Ledbetter",
+  "private": true,
+  "bin": {
+    "prr": "./index.js"
+  },
+  "dependencies": {
+    "buffered-reader": "^1.0.1",
+    "cheerio": "^0.20.0",
+    "commander": "^2.9.0",
+    "html": "0.0.10",
+    "lazy": "^1.0.11",
+    "pretty-data": "^0.40.0",
+    "progress": "^1.1.8",
+    "prompt": "^1.0.0",
+    "promptly": "^1.0.0",
+    "xml-flow": "^0.4.0"
+  }
+}

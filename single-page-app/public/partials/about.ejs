@@ -1,0 +1,28 @@
+
+<md-card>
+<div class="form-img">
+    <img class="md-card-image" alt="Washed Out" ng-src="{{information.image || 'http://redperiscope.asia/wp-content/uploads/2014/04/placeholder3.png'}}">
+</div>
+<md-card-title>
+  <md-card-title-text>
+    <span class="md-headline">{{information.title || "title"}}</span>
+  </md-card-title-text>
+</md-card-title>
+<md-card-content>
+  <p>
+    {{information.description || "description"}}
+  </p>
+  <h3 class="formheader">YOU'LL NEED...</h3>
+  <ul>
+    <li ng-repeat="item in information.items">{{item.text}}</li>
+</ul>
+<md-divider style="margin: 10px 0;"></md-divider>
+<h3 class="formheader">LET'S GET COOKING...</h3>
+<ul>
+    <li ng-repeat="step in information.steps">{{step.text}}</li>
+</ul>
+</md-card-content>
+<md-card-actions layout="row" layout-align="end center" class="layout-align-end-center layout-row">
+  <button class="md-button md-ink-ripple" type="button" aria-label="Action 1"><i class="fa fa-heart-o"></i><div class="md-ripple-container"></div></button>
+</md-card-actions>
+</md-card>

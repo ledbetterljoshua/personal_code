@@ -1,0 +1,23 @@
+{
+  "name": "single-page-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-ui-router": "^1.0.0-alpha.3",
+    "bcrypt-nodejs": "0.0.3",
+    "express": "^4.13.3",
+    "mongoose-relationship": "^0.1.5",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

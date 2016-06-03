@@ -1,0 +1,81 @@
+<style type="text/css">
+md-input-container.md-docs-dark-theme label, md-input-container.md-docs-dark-theme .md-placeholder {
+	color: #fff !important;
+}
+</style>
+
+<div ng-controller="newRecipe" layout="column" ng-cloak class="md-inline-form">
+  <md-content md-theme="docs-dark" layout-padding layout-gt-sm="row">
+    <md-input-container style="width: 300px;">
+      <label>Title</label>
+      <input ng-model="recipe.title">
+    </md-input-container>
+    
+  </md-content>
+  <md-content layout-padding>
+    <form name="recipeForm">
+      <div layout-gt-sm="row">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Company</label>
+          <input ng-model="recipe.company">
+        </md-input-container>
+        <md-datepicker ng-model="recipe.submissionDate" md-placeholder="Enter date"></md-datepicker>
+      </div>
+      <div layout-gt-sm="row">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>First name</label>
+          <input ng-model="recipe.firstName">
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Last Name</label>
+          <input ng-model="theMax">
+        </md-input-container>
+      </div>
+      <md-input-container class="md-block">
+        <label>Address</label>
+        <input ng-model="recipe.address">
+      </md-input-container>
+      
+    
+	  <md-content class="md-padding" layout="column">
+	    <md-chips
+	        ng-model="tags"
+	        placeholder="Insert tags here. (press enter to add tag)"></md-chips>
+	    <br/>
+	  </md-content>
+
+      <div layout-gt-sm="row">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>City</label>
+          <input ng-model="recipe.city">
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>State</label>
+          <md-select ng-model="recipe.state">
+            <md-option ng-repeat="state in states" value="{{state.abbrev}}">
+              {{state.abbrev}}
+            </md-option>
+          </md-select>
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Postal Code</label>
+          <input name="postalCode" ng-model="recipe.postalCode" placeholder="12345"
+                 required ng-pattern="/^[0-9]{5}$/" md-maxlength="5">
+          <div ng-messages="userForm.postalCode.$error" role="alert" multiple>
+            <div ng-message="required" class="my-message">You must supply a postal code.</div>
+            <div ng-message="pattern" class="my-message">That doesn't look like a valid postal
+              code.
+            </div>
+            <div ng-message="md-maxlength" class="my-message">
+              Don't use the long version silly...we don't need to be that specific...
+            </div>
+          </div>
+        </md-input-container>
+      </div>
+      <md-input-container class="md-block">
+        <label>Baking Instructions</label>
+        <textarea ng-model="recipe.instructions" columns="1" rows="5"></textarea>
+      </md-input-container>
+    </form>
+  </md-content>
+</div>

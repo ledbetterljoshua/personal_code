@@ -1,0 +1,107 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+body {
+	background: #000;
+}
+.left {
+	position: absolute;
+	width: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	overflow-y: scroll;
+	transition: all .3s;
+}
+div[class^="item"] {
+    width: 100%;
+    height: 0;
+    text-align: center;
+    color: #fff;
+    padding: 32px 0;
+    border-bottom: 2px solid;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+ }
+ div[class^="item"]:hover {
+ 	background: black;
+ }
+ .menu {
+ 	position: relative;
+ 	top: 10px;
+ 	left:10px;
+ 	width: 40px;
+ 	height:20px;
+ 	color: #fff;
+ 	display: block;
+    z-index: 999;
+    border: 1px solid;
+    padding: 3px;
+    transition: all .3s;
+ }
+ .left-clicked {
+ 	width: 240px;
+ }
+ .menu-clicked {
+ 	left: 240px;
+ }
+</style>
+</head>
+<body>
+	<div class="menu"> Menu </div>
+<iframe src="" style="
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 auto;
+    border:none;
+"></iframe>
+
+<div class="left">
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+
+	var video = $('iframe');
+	var itemBar = $('.left');
+
+	var movs = {
+		"ep1": "https://lh3.googleusercontent.com/CsPp0EVjhZWGd7imRa71woajnaB6QmtDfIIkqX10vl5J=m37",
+		"ep2": "https://r13---sn-q4f7snez.googlevideo.com/videoplayback?id=4fc1f05b86aeb084&itag=37&source=webdrive&begin=0&requiressl=yes&mm=30&mn=sn-q4f7snez&ms=nxu&mv=m&nh=IgpwcjAxLmRmdzA2KgkxMjcuMC4wLjE&pl=13&lmt=1437674354759400&mime=video/mp4&mt=1446081374&ip=72.182.9.108&ipbits=8&expire=1446110247&sparams=ip,ipbits,expire,id,itag,source,requiressl,mm,mn,ms,mv,nh,pl,lmt,mime&signature=814EDF2073E97D2BD7F07D95C1F134469EFE250F.B5F53DB4E58DC54D04AF4311379AFCE47CC38F50&key=ck2",
+		"ep3": "3",
+		"ep4": "https://r2---sn-q4f7sn7e.googlevideo.com/videoplayback?id=00d356d1e43eae33&itag=22&source=webdrive&begin=0&requiressl=yes&mm=30&mn=sn-q4f7sn7e&ms=nxu&mv=m&nh=IgpwcjA0LmRmdzA2KgkxMjcuMC4wLjE&pl=13&lmt=1437021711486907&mime=video/mp4&mt=1446081374&ip=72.182.9.108&ipbits=8&expire=1446110208&sparams=ip,ipbits,expire,id,itag,source,requiressl,mm,mn,ms,mv,nh,pl,lmt,mime&signature=4F60B09F970853C4C7CF30D63D7EEE471F1F07B0.1775A5D00F5E2B18A0F2631182B3383869B792A1&key=ck2",
+		"ep5": "https://r2---sn-q4f7sn7k.googlevideo.com/videoplayback?id=e44a769b026f4c73&itag=22&source=webdrive&begin=0&requiressl=yes&mm=30&mn=sn-q4f7sn7k&ms=nxu&mv=m&nh=IgpwcjA0LmRmdzA2KgkxMjcuMC4wLjE&pl=13&lmt=1437628982049870&mime=video/mp4&mt=1446081281&ip=72.182.9.108&ipbits=8&expire=1446110168&sparams=ip,ipbits,expire,id,itag,source,requiressl,mm,mn,ms,mv,nh,pl,lmt,mime&signature=B26F951846306D29F51BF3EA1950E479B63DCBEE.8DCEF5AE9105E602D2A7929603268D34CBB11434&key=ck2",
+		"ep6": "https://r2---sn-q4fl6n7e.googlevideo.com/videoplayback?id=7f521bfbe9b476a7&itag=22&source=webdrive&begin=0&requiressl=yes&mm=30&mn=sn-q4fl6n7e&ms=nxu&mv=m&nh=IgpwcjAxLmRmdzA2KgkxMjcuMC4wLjE&pl=13&lmt=1438228458055911&mime=video/mp4&mt=1446079516&ip=72.182.9.108&ipbits=8&expire=1446108401&sparams=ip,ipbits,expire,id,itag,source,requiressl,mm,mn,ms,mv,nh,pl,lmt,mime&signature=45D70CEC87F997EF4161646CE68EB6E7CE170851.13BA0D95CCDE5092194DC322A22AA39D24B95C53&key=ck2"
+	}
+
+	var ep = 10;
+	for(i=1;i<ep;i++) {
+		$(itemBar)
+		.append('<div class="item'+i+'" number="'+i+'" src="'+ movs["ep"+i] +'"></div>');
+		$('div[number='+i+']').text('Episode ' + i);
+	}
+
+	$('div[class^=item]').click(function(){
+		$(video).attr('src', $(this).attr('src'));
+	});
+	$('.menu').click(function(){
+		$('.left').toggleClass('left-clicked');
+		$(this).toggleClass('menu-clicked');
+	});
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

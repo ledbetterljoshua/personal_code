@@ -1,0 +1,15 @@
+{
+  "name": "learn-map-reduction_mongodb",
+  "version": "1.0.0",
+  "description": "learn-map-reduction_mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dummy-json": "0.0.3",
+    "mongojs": "^1.4.1"
+  }
+}

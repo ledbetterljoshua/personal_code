@@ -1,0 +1,17 @@
+<div class="textwidget margin-top-30">
+  <h1 ng-bind="vm.restaurant.name"></h1>
+</div>
+<div class="widget">
+  <strong ng-show="!vm.restaurant">Loading...</strong>
+  <div class="category" ng-repeat="cat in vm.restaurant.menu">
+    <h2 ng-bind="cat.name"></h2>
+    <ul>
+      <li ng-repeat="item in cat.children">
+        <a href="#">
+          <strong ng-bind="item.name"></strong>
+        </a>
+        - <span ng-bind="item.price"></span> - <em ng-bind="item.descrip"></em>
+      </li>
+    </ul>
+  </div>
+</div>

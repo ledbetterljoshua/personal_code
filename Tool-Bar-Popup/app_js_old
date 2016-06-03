@@ -1,0 +1,64 @@
+generate the HTML for the tooltip and append it to the body
+	var createToolTip = function() {
+		var selectedText = selection;
+		if (selectedText) {
+			// make box
+			var div 			= document.createElement('div'); 
+			div.className 		= "highlightMenu fade";    
+			div.style.position 	= 'absolute';
+			$(div)
+			.wrapInner('<div class="highlightMenu-inner"></div>')
+			.wrapInner('<div class="buttonSet buttonSet--highlightMenu"></div>')
+			.append('<div class="highlightMenu-arrowClip"><span class="highlightMenu-arrow"></span></div>')
+			$(div).find('.highlightMenu-inner')
+			.append('<button class="button button--chromeless button--withIcon button--highlightMenu js-highlightMenuQuoteButton pencil"><span class="fa fa-pencil"></span></button><button class="button button--chromeless button--withIcon button--highlightMenu twitter" data-toggle="modal" data-target="#myModal"><span class=" fa fa-twitter"></span></button><button class="button button--chromeless button--withIcon button--highlightMenu button--highlightMenuNotes google" data-toggle="modal" data-target="#myModal"><span class="fa fa-google"></span></button>');
+			$(div).attr('id', 'highlightMenu');
+			document.body.appendChild(div);           
+
+			$('.highlightMenu').wrap('<div id="theAwesomeToolBarThatIsWayCoolYo"></div>');
+
+			toolBarCreated = true;
+		}
+	} 
+
+
+	/*ACTIVATE TOOLTIP - BEGIN*/
+	var activateToolTip = function() {
+	    if (selection) {
+	    	//var self = GL
+		    var GL = {};
+			GL.selectedText = 	selection, 
+			GL.div =   			$('.highlightMenu'), 
+			GL.arrow = 			$('.highlightMenu .highlightMenu-arrowClip'), 	
+			GL.arrowStyle =  	'top: -10px;clip: rect(0px 18px 10.8px 1);',
+			GL.range =			selection.getRangeAt(0),
+			GL.rect = 			GL.range.getBoundingClientRect(),
+			GL.top =  			(GL.rect.top + window.scrollY) - 45, 
+			GL.left = 			GL.rect.left + window.scrollX  - 48.5 + (GL.rect.width / 2) 
+		
+
+			if ( GL.top < 0 ) {
+
+				if(GL.rect.height > 80) {
+					console.log("geater")
+					GL.top = (GL.rect.GL.top + window.scrollY) + (GL.rect.height - 45);
+				} else {
+					GL.top = (GL.rect.GL.top + window.scrollY) - (GL.rect.height - 45);
+				} 
+
+				$(GL.arrow)
+				.attr('style', GL.arrowStyle);
+			} else {
+				$(GL.arrow)
+				.attr('style', '');
+			}
+
+			$(GL.div).addClass('highlightMenu--active in');
+			$(GL.div).css({
+				"top": GL.top + 'px', 
+				"left":  GL.left + 'px', 
+				"opacity": 1
+			});
+			
+	    }
+	}

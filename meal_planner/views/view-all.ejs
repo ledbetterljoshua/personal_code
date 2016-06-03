@@ -1,0 +1,65 @@
+  <style type="text/css">
+  	ul {
+	  padding: inherit;
+	  padding-top: 0;
+	}
+	md-card-title {
+    	padding: 10px 14px;
+	}
+	p.ng-binding {
+	    margin: 0;
+	}
+	section.left {
+	    height: 100%;
+	    position: fixed;
+	    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+	}
+	.right {
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+	    height: 80%;
+	    max-width: 300px;
+	}
+	md-content.md-padding.layout-wrap.layout-align-center-start.layout-row {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	
+	</style>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+<div class="section group">
+<section class="left col-md-2">
+	<md-content>
+		<md-list role="list">
+		</md-list>
+	</md-content>
+</section>	
+
+<section class="col-md-2"><md-content><md-list role="list"></md-list></md-content>
+</section>	
+
+  <section class="center col-md-7">
+
+  	<md-content class="md-padding" layout="row" layout-wrap layout-align="center start">
+    <div flex="100" layout="column">
+      <md-card ng-repeat="recipe in recipes | orderBy:'-created'  track by recipe._id" ng-animate=" 'animate' " role="listitem">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{recipe.title}}</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content ng-bind-html="recipe.description">        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+         <p>{{recipe.created | date}}</p><md-button ng-click="remove(recipe._id)"> delete </md-button>
+        </md-card-actions>
+      </md-card>
+    </div>
+	</md-content>
+  	 
+</section>
+
+<section class="right col-md-3">
+	<md-content>
+		<md-list role="list">
+		</md-list>
+	</md-content>
+</section>	

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>P Wharton - meal planner</title>
+    <meta name="description" content="Monument - application for saving content on the web">
+    <meta name="keywords" content="Monument, saving, content, on the web, clean">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/touch/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/touch/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-touch-icon-144x144.png">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+        <script src="js/respond.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    body {
+        padding: 104px 0;
+        background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(156, 125, 125, 0.45) ), url(http://www.foodwise.com.au/wp-content/uploads/2012/10/ChoppingBoard2.gif) no-repeat 50% 50%;
+        font: 24px/36px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        /* color: white; */
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    </style>
+</head>
+<body class="no-js">
+    <div class="main">
+        <header>
+            <div class="wrap">
+               <div class="col-sm-6 col-sm-offset-3">
+
+                    <h1><span class="fa fa-sign-in"></span> Signup</h1>
+
+                    <!-- show any messages that come back with authentication -->
+                    <% if (message.length > 0) { %>
+                        <div class="alert alert-danger"><%= message %></div>
+                    <% } %>
+
+                    <!-- LOGIN FORM -->
+                    <form action="/signup" method="post">
+
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" class="form-control" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" name="password">
+                        </div>
+
+                        <button type="submit" class="btn btn-warning btn-lg">Signup</button>
+                    </form>
+
+                    <hr>
+
+                    <p>Already have an account? <a href="/login">Login</a></p>
+                    <p>Or go <a href="/">home</a>.</p>
+
+                </div>
+            <!-- /.wrap -->
+        </header>
+        
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/library.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/retina.js"></script>
+</body>
+</html>

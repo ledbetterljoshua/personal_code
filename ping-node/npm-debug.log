@@ -1,0 +1,593 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.12.7/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'net-ping',
+1 verbose cli   '-save' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData net-ping
+8 silly fetchNamedPackageData net-ping
+9 silly mapToRegistry name net-ping
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/net-ping
+13 verbose request uri https://registry.npmjs.org/net-ping
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 1:26:41 PM
+16 verbose request id 112aa2cb190aacf4
+17 verbose etag "5BFC37CFL3QBYWEQLUK4Y889V"
+18 http request GET https://registry.npmjs.org/net-ping
+19 http 304 https://registry.npmjs.org/net-ping
+20 verbose headers { date: 'Thu, 07 Jan 2016 19:26:41 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   etag: '"5BFC37CFL3QBYWEQLUK4Y889V"',
+20 verbose headers   age: '0',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-dfw1830-DFW',
+20 verbose headers   'x-cache': 'MISS',
+20 verbose headers   'x-cache-hits': '0',
+20 verbose headers   'x-timer': 'S1452194801.524003,VS0,VE94',
+20 verbose headers   vary: 'Accept' }
+21 silly get cb [ 304,
+21 silly get   { date: 'Thu, 07 Jan 2016 19:26:41 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     etag: '"5BFC37CFL3QBYWEQLUK4Y889V"',
+21 silly get     age: '0',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-dfw1830-DFW',
+21 silly get     'x-cache': 'MISS',
+21 silly get     'x-cache-hits': '0',
+21 silly get     'x-timer': 'S1452194801.524003,VS0,VE94',
+21 silly get     vary: 'Accept' } ]
+22 verbose etag https://registry.npmjs.org/net-ping from cache
+23 verbose get saving net-ping to /Users/joshua.ledbetter/.npm/registry.npmjs.org/net-ping/.cache.json
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule net-ping@1.1.12 checking installable status
+37 silly cache add args [ 'net-ping', null ]
+38 verbose cache add spec net-ping
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'net-ping',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'net-ping',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: '*',
+39 silly cache add   type: 'range' }
+40 silly addNamed net-ping@*
+41 verbose addNamed "*" is a valid semver range for net-ping
+42 silly addNameRange { name: 'net-ping', range: '*', hasData: false }
+43 silly mapToRegistry name net-ping
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/net-ping
+47 verbose addNameRange registry:https://registry.npmjs.org/net-ping not in flight; fetching
+48 verbose get https://registry.npmjs.org/net-ping not expired, no request
+49 silly addNameRange number 2 { name: 'net-ping', range: '*', hasData: true }
+50 silly addNameRange versions [ 'net-ping',
+50 silly addNameRange   [ '1.0.0',
+50 silly addNameRange     '1.0.1',
+50 silly addNameRange     '1.0.2',
+50 silly addNameRange     '1.1.0',
+50 silly addNameRange     '1.1.1',
+50 silly addNameRange     '1.1.2',
+50 silly addNameRange     '1.1.3',
+50 silly addNameRange     '1.1.4',
+50 silly addNameRange     '1.1.5',
+50 silly addNameRange     '1.1.6',
+50 silly addNameRange     '1.1.7',
+50 silly addNameRange     '1.1.8',
+50 silly addNameRange     '1.1.9',
+50 silly addNameRange     '1.1.10',
+50 silly addNameRange     '1.1.11',
+50 silly addNameRange     '1.1.12' ] ]
+51 silly addNamed net-ping@1.1.12
+52 verbose addNamed "1.1.12" is a plain semver version for net-ping
+53 silly cache afterAdd net-ping@1.1.12
+54 verbose afterAdd /Users/joshua.ledbetter/.npm/net-ping/1.1.12/package/package.json not in flight; writing
+55 verbose afterAdd /Users/joshua.ledbetter/.npm/net-ping/1.1.12/package/package.json written
+56 silly fetchNamedPackageData raw-socket
+57 silly mapToRegistry name raw-socket
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/raw-socket
+61 verbose request uri https://registry.npmjs.org/raw-socket
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 1:26:41 PM
+64 verbose etag "1DZDEE27XHDDOVW9DDBFGOF3A"
+65 http request GET https://registry.npmjs.org/raw-socket
+66 http 304 https://registry.npmjs.org/raw-socket
+67 verbose headers { date: 'Thu, 07 Jan 2016 19:26:41 GMT',
+67 verbose headers   via: '1.1 varnish',
+67 verbose headers   'cache-control': 'max-age=300',
+67 verbose headers   etag: '"1DZDEE27XHDDOVW9DDBFGOF3A"',
+67 verbose headers   age: '0',
+67 verbose headers   connection: 'keep-alive',
+67 verbose headers   'x-served-by': 'cache-dfw1822-DFW',
+67 verbose headers   'x-cache': 'MISS',
+67 verbose headers   'x-cache-hits': '0',
+67 verbose headers   'x-timer': 'S1452194801.709481,VS0,VE186',
+67 verbose headers   vary: 'Accept' }
+68 silly get cb [ 304,
+68 silly get   { date: 'Thu, 07 Jan 2016 19:26:41 GMT',
+68 silly get     via: '1.1 varnish',
+68 silly get     'cache-control': 'max-age=300',
+68 silly get     etag: '"1DZDEE27XHDDOVW9DDBFGOF3A"',
+68 silly get     age: '0',
+68 silly get     connection: 'keep-alive',
+68 silly get     'x-served-by': 'cache-dfw1822-DFW',
+68 silly get     'x-cache': 'MISS',
+68 silly get     'x-cache-hits': '0',
+68 silly get     'x-timer': 'S1452194801.709481,VS0,VE186',
+68 silly get     vary: 'Accept' } ]
+69 verbose etag https://registry.npmjs.org/raw-socket from cache
+70 verbose get saving raw-socket to /Users/joshua.ledbetter/.npm/registry.npmjs.org/raw-socket/.cache.json
+71 silly resolveWithNewModule raw-socket@1.4.0 checking installable status
+72 silly cache add args [ 'raw-socket@*', null ]
+73 verbose cache add spec raw-socket@*
+74 silly cache add parsed spec Result {
+74 silly cache add   raw: 'raw-socket@*',
+74 silly cache add   scope: null,
+74 silly cache add   name: 'raw-socket',
+74 silly cache add   rawSpec: '*',
+74 silly cache add   spec: '*',
+74 silly cache add   type: 'range' }
+75 silly addNamed raw-socket@*
+76 verbose addNamed "*" is a valid semver range for raw-socket
+77 silly addNameRange { name: 'raw-socket', range: '*', hasData: false }
+78 silly mapToRegistry name raw-socket
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry uri https://registry.npmjs.org/raw-socket
+82 verbose addNameRange registry:https://registry.npmjs.org/raw-socket not in flight; fetching
+83 verbose get https://registry.npmjs.org/raw-socket not expired, no request
+84 silly addNameRange number 2 { name: 'raw-socket', range: '*', hasData: true }
+85 silly addNameRange versions [ 'raw-socket',
+85 silly addNameRange   [ '1.0.0',
+85 silly addNameRange     '1.0.1',
+85 silly addNameRange     '1.0.2',
+85 silly addNameRange     '1.1.0',
+85 silly addNameRange     '1.1.1',
+85 silly addNameRange     '1.1.2',
+85 silly addNameRange     '1.1.3',
+85 silly addNameRange     '1.1.4',
+85 silly addNameRange     '1.1.5',
+85 silly addNameRange     '1.1.6',
+85 silly addNameRange     '1.1.7',
+85 silly addNameRange     '1.2.0',
+85 silly addNameRange     '1.2.1',
+85 silly addNameRange     '1.2.2',
+85 silly addNameRange     '1.3.0',
+85 silly addNameRange     '1.3.1',
+85 silly addNameRange     '1.3.2',
+85 silly addNameRange     '1.3.3',
+85 silly addNameRange     '1.4.0' ] ]
+86 silly addNamed raw-socket@1.4.0
+87 verbose addNamed "1.4.0" is a plain semver version for raw-socket
+88 silly cache afterAdd raw-socket@1.4.0
+89 verbose afterAdd /Users/joshua.ledbetter/.npm/raw-socket/1.4.0/package/package.json not in flight; writing
+90 verbose afterAdd /Users/joshua.ledbetter/.npm/raw-socket/1.4.0/package/package.json written
+91 silly fetchNamedPackageData nan
+92 silly mapToRegistry name nan
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry https://registry.npmjs.org/
+95 silly mapToRegistry uri https://registry.npmjs.org/nan
+96 verbose request uri https://registry.npmjs.org/nan
+97 verbose request no auth needed
+98 info attempt registry request try #1 at 1:26:41 PM
+99 verbose etag "7CEDVJA24M9BXRU7SU6WRSW4M"
+100 http request GET https://registry.npmjs.org/nan
+101 http 304 https://registry.npmjs.org/nan
+102 verbose headers { date: 'Thu, 07 Jan 2016 19:26:41 GMT',
+102 verbose headers   via: '1.1 varnish',
+102 verbose headers   'cache-control': 'max-age=300',
+102 verbose headers   etag: '"7CEDVJA24M9BXRU7SU6WRSW4M"',
+102 verbose headers   age: '80',
+102 verbose headers   connection: 'keep-alive',
+102 verbose headers   'x-served-by': 'cache-dfw1820-DFW',
+102 verbose headers   'x-cache': 'HIT',
+102 verbose headers   'x-cache-hits': '1',
+102 verbose headers   'x-timer': 'S1452194801.958122,VS0,VE0',
+102 verbose headers   vary: 'Accept' }
+103 silly get cb [ 304,
+103 silly get   { date: 'Thu, 07 Jan 2016 19:26:41 GMT',
+103 silly get     via: '1.1 varnish',
+103 silly get     'cache-control': 'max-age=300',
+103 silly get     etag: '"7CEDVJA24M9BXRU7SU6WRSW4M"',
+103 silly get     age: '80',
+103 silly get     connection: 'keep-alive',
+103 silly get     'x-served-by': 'cache-dfw1820-DFW',
+103 silly get     'x-cache': 'HIT',
+103 silly get     'x-cache-hits': '1',
+103 silly get     'x-timer': 'S1452194801.958122,VS0,VE0',
+103 silly get     vary: 'Accept' } ]
+104 verbose etag https://registry.npmjs.org/nan from cache
+105 verbose get saving nan to /Users/joshua.ledbetter/.npm/registry.npmjs.org/nan/.cache.json
+106 silly resolveWithNewModule nan@2.0.9 checking installable status
+107 silly cache add args [ 'nan@2.0.*', null ]
+108 verbose cache add spec nan@2.0.*
+109 silly cache add parsed spec Result {
+109 silly cache add   raw: 'nan@2.0.*',
+109 silly cache add   scope: null,
+109 silly cache add   name: 'nan',
+109 silly cache add   rawSpec: '2.0.*',
+109 silly cache add   spec: '>=2.0.0 <2.1.0',
+109 silly cache add   type: 'range' }
+110 silly addNamed nan@>=2.0.0 <2.1.0
+111 verbose addNamed ">=2.0.0 <2.1.0" is a valid semver range for nan
+112 silly addNameRange { name: 'nan', range: '>=2.0.0 <2.1.0', hasData: false }
+113 silly mapToRegistry name nan
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry uri https://registry.npmjs.org/nan
+117 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+118 verbose get https://registry.npmjs.org/nan not expired, no request
+119 silly addNameRange number 2 { name: 'nan', range: '>=2.0.0 <2.1.0', hasData: true }
+120 silly addNameRange versions [ 'nan',
+120 silly addNameRange   [ '0.3.0-wip',
+120 silly addNameRange     '0.3.0-wip2',
+120 silly addNameRange     '0.3.0',
+120 silly addNameRange     '0.3.1',
+120 silly addNameRange     '0.3.2',
+120 silly addNameRange     '0.4.0',
+120 silly addNameRange     '0.4.1',
+120 silly addNameRange     '0.4.2',
+120 silly addNameRange     '0.4.3',
+120 silly addNameRange     '0.4.4',
+120 silly addNameRange     '0.5.0',
+120 silly addNameRange     '0.5.1',
+120 silly addNameRange     '0.5.2',
+120 silly addNameRange     '0.6.0',
+120 silly addNameRange     '0.7.0',
+120 silly addNameRange     '0.7.1',
+120 silly addNameRange     '0.8.0',
+120 silly addNameRange     '1.0.0',
+120 silly addNameRange     '1.1.0',
+120 silly addNameRange     '1.1.1',
+120 silly addNameRange     '1.1.2',
+120 silly addNameRange     '1.2.0',
+120 silly addNameRange     '1.3.0',
+120 silly addNameRange     '1.4.0',
+120 silly addNameRange     '1.4.1',
+120 silly addNameRange     '1.5.0',
+120 silly addNameRange     '1.4.2',
+120 silly addNameRange     '1.4.3',
+120 silly addNameRange     '1.5.1',
+120 silly addNameRange     '1.5.2',
+120 silly addNameRange     '1.6.0',
+120 silly addNameRange     '1.5.3',
+120 silly addNameRange     '1.6.1',
+120 silly addNameRange     '1.6.2',
+120 silly addNameRange     '1.7.0',
+120 silly addNameRange     '1.8.0',
+120 silly addNameRange     '1.8.1',
+120 silly addNameRange     '1.8.2',
+120 silly addNameRange     '1.8.3',
+120 silly addNameRange     '1.8.4',
+120 silly addNameRange     '1.9.0',
+120 silly addNameRange     '2.0.0',
+120 silly addNameRange     '2.0.1',
+120 silly addNameRange     '2.0.2',
+120 silly addNameRange     '2.0.3',
+120 silly addNameRange     '2.0.4',
+120 silly addNameRange     '2.0.5',
+120 silly addNameRange     '2.0.6',
+120 silly addNameRange     '2.0.7',
+120 silly addNameRange     '2.0.8',
+120 silly addNameRange     '2.0.9',
+120 silly addNameRange     '2.1.0' ] ]
+121 silly addNamed nan@2.0.9
+122 verbose addNamed "2.0.9" is a plain semver version for nan
+123 silly cache afterAdd nan@2.0.9
+124 verbose afterAdd /Users/joshua.ledbetter/.npm/nan/2.0.9/package/package.json not in flight; writing
+125 verbose afterAdd /Users/joshua.ledbetter/.npm/nan/2.0.9/package/package.json written
+126 silly loadAllDepsIntoIdealTree Finishing
+127 silly idealTree:prePrune ping-node@1.0.0
+127 silly idealTree:prePrune ├── nan@2.0.9
+127 silly idealTree:prePrune ├── net-ping@1.1.12
+127 silly idealTree:prePrune └── raw-socket@1.4.0
+128 silly loadIdealTree Finishing
+129 silly currentTree ping-node@1.0.0
+130 silly idealTree ping-node@1.0.0
+130 silly idealTree ├── nan@2.0.9
+130 silly idealTree ├── net-ping@1.1.12
+130 silly idealTree └── raw-socket@1.4.0
+131 silly generateActionsToTake Starting
+132 silly install generateActionsToTake
+133 silly generateActionsToTake Finishing
+134 silly diffTrees action count 3
+135 silly diffTrees add nan@2.0.9
+136 silly diffTrees add raw-socket@1.4.0
+137 silly diffTrees add net-ping@1.1.12
+138 silly decomposeActions action count 24
+139 silly decomposeActions fetch nan@2.0.9
+140 silly decomposeActions extract nan@2.0.9
+141 silly decomposeActions preinstall nan@2.0.9
+142 silly decomposeActions build nan@2.0.9
+143 silly decomposeActions install nan@2.0.9
+144 silly decomposeActions postinstall nan@2.0.9
+145 silly decomposeActions test nan@2.0.9
+146 silly decomposeActions finalize nan@2.0.9
+147 silly decomposeActions fetch raw-socket@1.4.0
+148 silly decomposeActions extract raw-socket@1.4.0
+149 silly decomposeActions preinstall raw-socket@1.4.0
+150 silly decomposeActions build raw-socket@1.4.0
+151 silly decomposeActions install raw-socket@1.4.0
+152 silly decomposeActions postinstall raw-socket@1.4.0
+153 silly decomposeActions test raw-socket@1.4.0
+154 silly decomposeActions finalize raw-socket@1.4.0
+155 silly decomposeActions fetch net-ping@1.1.12
+156 silly decomposeActions extract net-ping@1.1.12
+157 silly decomposeActions preinstall net-ping@1.1.12
+158 silly decomposeActions build net-ping@1.1.12
+159 silly decomposeActions install net-ping@1.1.12
+160 silly decomposeActions postinstall net-ping@1.1.12
+161 silly decomposeActions test net-ping@1.1.12
+162 silly decomposeActions finalize net-ping@1.1.12
+163 silly executeActions Starting
+164 silly install executeActions
+165 silly doSerial global-install 0
+166 silly doParallel fetch 3
+167 verbose lock using /Users/joshua.ledbetter/.npm/_locks/staging-bdb56aff91b574ec.lock for /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging
+168 silly doParallel extract 3
+169 silly extract nan
+170 silly extract raw-socket
+171 silly extract net-ping
+172 verbose unbuild node_modules/.staging/nan-a7af2bc1d4ddad49d3eb061f77789a70
+173 verbose unbuild node_modules/.staging/raw-socket-812e3ff47018dd64932f94181fda4168
+174 verbose unbuild node_modules/.staging/net-ping-1e4df016e52a2bffbb2f73cfc2d1f4b1
+175 silly gentlyRm /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/nan-a7af2bc1d4ddad49d3eb061f77789a70 is being purged from base /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node
+176 silly gentlyRm /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/raw-socket-812e3ff47018dd64932f94181fda4168 is being purged from base /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node
+177 verbose gentlyRm don't care about contents; nuking /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/nan-a7af2bc1d4ddad49d3eb061f77789a70
+178 verbose gentlyRm don't care about contents; nuking /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/raw-socket-812e3ff47018dd64932f94181fda4168
+179 silly gentlyRm /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/net-ping-1e4df016e52a2bffbb2f73cfc2d1f4b1 is being purged from base /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node
+180 verbose tar unpack /Users/joshua.ledbetter/.npm/nan/2.0.9/package.tgz
+181 verbose tar unpacking to /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/nan-a7af2bc1d4ddad49d3eb061f77789a70
+182 silly gentlyRm /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/nan-a7af2bc1d4ddad49d3eb061f77789a70 is being purged
+183 verbose tar unpack /Users/joshua.ledbetter/.npm/raw-socket/1.4.0/package.tgz
+184 verbose tar unpacking to /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/raw-socket-812e3ff47018dd64932f94181fda4168
+185 silly gentlyRm /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/raw-socket-812e3ff47018dd64932f94181fda4168 is being purged
+186 verbose gentlyRm don't care about contents; nuking /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/net-ping-1e4df016e52a2bffbb2f73cfc2d1f4b1
+187 verbose gentlyRm don't care about contents; nuking /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/nan-a7af2bc1d4ddad49d3eb061f77789a70
+188 verbose gentlyRm don't care about contents; nuking /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/raw-socket-812e3ff47018dd64932f94181fda4168
+189 verbose tar unpack /Users/joshua.ledbetter/.npm/net-ping/1.1.12/package.tgz
+190 verbose tar unpacking to /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/net-ping-1e4df016e52a2bffbb2f73cfc2d1f4b1
+191 silly gentlyRm /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/net-ping-1e4df016e52a2bffbb2f73cfc2d1f4b1 is being purged
+192 silly gunzTarPerm modes [ '755', '644' ]
+193 silly gunzTarPerm modes [ '755', '644' ]
+194 verbose gentlyRm don't care about contents; nuking /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/net-ping-1e4df016e52a2bffbb2f73cfc2d1f4b1
+195 silly gunzTarPerm modes [ '755', '644' ]
+196 silly gunzTarPerm extractEntry package.json
+197 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+198 silly gunzTarPerm extractEntry package.json
+199 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+200 silly gunzTarPerm extractEntry package.json
+201 silly gunzTarPerm extractEntry README.md
+202 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+203 silly gunzTarPerm extractEntry include_dirs.js
+204 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+205 silly gunzTarPerm extractEntry .npmignore
+206 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+207 silly gunzTarPerm extractEntry README.md
+208 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+209 silly gunzTarPerm extractEntry README.md
+210 silly gunzTarPerm extractEntry index.js
+211 silly gunzTarPerm extractEntry .hgignore
+212 silly gunzTarPerm extractEntry example/ping-packet-size.js
+213 silly gunzTarPerm extractEntry example/ping-response-time.js
+214 silly gunzTarPerm extractEntry example/ping-retries-0.js
+215 silly gunzTarPerm extractEntry example/ping-ttl.js
+216 silly gunzTarPerm extractEntry example/ping.js
+217 silly gunzTarPerm extractEntry example/ping6-ttl.js
+218 silly gunzTarPerm extractEntry example/ping6.js
+219 silly gunzTarPerm extractEntry example/trace-route.js
+220 silly gunzTarPerm extractEntry nan_converters.h
+221 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+222 silly gunzTarPerm extractEntry LICENSE.md
+223 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+224 silly gunzTarPerm extractEntry .dntrc
+225 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+226 silly gunzTarPerm extractEntry index.js
+227 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+228 silly gunzTarPerm extractEntry appveyor.yml
+229 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+230 silly gunzTarPerm extractEntry binding.gyp
+231 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+232 silly gunzTarPerm extractEntry example/create-checksum.js
+233 silly gunzTarPerm modified mode [ 'example/create-checksum.js', 438, 420 ]
+234 silly gunzTarPerm extractEntry example/htonl.js
+235 silly gunzTarPerm modified mode [ 'example/htonl.js', 438, 420 ]
+236 silly gunzTarPerm extractEntry example/htons.js
+237 silly gunzTarPerm modified mode [ 'example/htons.js', 438, 420 ]
+238 silly gunzTarPerm extractEntry doc/new.md
+239 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+240 silly gunzTarPerm extractEntry doc/.build.sh
+241 silly gunzTarPerm modified mode [ 'doc/.build.sh', 509, 493 ]
+242 silly gunzTarPerm extractEntry doc/buffers.md
+243 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+244 silly gunzTarPerm extractEntry doc/callback.md
+245 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+246 silly gunzTarPerm extractEntry example/ntohl.js
+247 silly gunzTarPerm modified mode [ 'example/ntohl.js', 438, 420 ]
+248 silly gunzTarPerm extractEntry example/get-option.js
+249 silly gunzTarPerm modified mode [ 'example/get-option.js', 438, 420 ]
+250 silly gunzTarPerm extractEntry doc/converters.md
+251 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+252 silly gunzTarPerm extractEntry doc/errors.md
+253 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+254 silly gunzTarPerm extractEntry example/ping-no-ip-header.js
+255 silly gunzTarPerm modified mode [ 'example/ping-no-ip-header.js', 438, 420 ]
+256 silly gunzTarPerm extractEntry example/ping-set-option-ip-ttl.js
+257 silly gunzTarPerm modified mode [ 'example/ping-set-option-ip-ttl.js', 438, 420 ]
+258 silly gunzTarPerm extractEntry example/ping.js
+259 silly gunzTarPerm modified mode [ 'example/ping.js', 438, 420 ]
+260 silly gunzTarPerm extractEntry example/ping6-no-ip-header.js
+261 silly gunzTarPerm modified mode [ 'example/ping6-no-ip-header.js', 438, 420 ]
+262 silly gunzTarPerm extractEntry doc/maybe_types.md
+263 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+264 silly gunzTarPerm extractEntry doc/methods.md
+265 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+266 silly gunzTarPerm extractEntry example/ping6.js
+267 silly gunzTarPerm modified mode [ 'example/ping6.js', 438, 420 ]
+268 silly gunzTarPerm extractEntry example/ntohs.js
+269 silly gunzTarPerm modified mode [ 'example/ntohs.js', 438, 420 ]
+270 silly gunzTarPerm extractEntry doc/asyncworker.md
+271 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+272 silly gunzTarPerm extractEntry doc/node_misc.md
+273 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+274 silly gunzTarPerm extractEntry src/raw.cc
+275 silly gunzTarPerm modified mode [ 'src/raw.cc', 438, 420 ]
+276 silly gunzTarPerm extractEntry src/raw.h
+277 silly gunzTarPerm modified mode [ 'src/raw.h', 438, 420 ]
+278 silly gunzTarPerm extractEntry doc/persistent.md
+279 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+280 silly gunzTarPerm extractEntry doc/scopes.md
+281 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+282 silly gunzTarPerm extractEntry doc/script.md
+283 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+284 silly gunzTarPerm extractEntry doc/string_bytes.md
+285 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+286 silly gunzTarPerm extractEntry doc/v8_internals.md
+287 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+288 silly gunzTarPerm extractEntry doc/v8_misc.md
+289 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+290 silly gunzTarPerm extractEntry nan.h
+291 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+292 silly gunzTarPerm extractEntry nan_callbacks.h
+293 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+294 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+295 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+296 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+297 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+298 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+299 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+300 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+301 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+302 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+303 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+304 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+305 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+306 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+307 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+308 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+309 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+310 silly gunzTarPerm extractEntry nan_new.h
+311 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+312 silly gunzTarPerm extractEntry nan_object_wrap.h
+313 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+314 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+315 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+316 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+317 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+318 silly gunzTarPerm extractEntry nan_string_bytes.h
+319 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+320 silly gunzTarPerm extractEntry nan_weak.h
+321 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+322 silly gunzTarPerm extractEntry CHANGELOG.md
+323 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+324 silly gunzTarPerm extractEntry tools/package.json
+325 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+326 silly gunzTarPerm extractEntry tools/README.md
+327 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+328 silly gunzTarPerm extractEntry tools/1to2.js
+329 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+330 silly doParallel preinstall 3
+331 silly preinstall nan /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/nan-a7af2bc1d4ddad49d3eb061f77789a70
+332 info lifecycle nan@2.0.9~preinstall: nan@2.0.9
+333 silly preinstall raw-socket /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/raw-socket-812e3ff47018dd64932f94181fda4168
+334 info lifecycle raw-socket@1.4.0~preinstall: raw-socket@1.4.0
+335 silly preinstall net-ping /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/net-ping-1e4df016e52a2bffbb2f73cfc2d1f4b1
+336 info lifecycle net-ping@1.1.12~preinstall: net-ping@1.1.12
+337 silly lifecycle nan@2.0.9~preinstall: no script for preinstall, continuing
+338 silly lifecycle raw-socket@1.4.0~preinstall: no script for preinstall, continuing
+339 silly lifecycle net-ping@1.1.12~preinstall: no script for preinstall, continuing
+340 silly doReverseSerial remove 0
+341 silly doSerial move 0
+342 silly doSerial finalize 3
+343 silly finalize /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/nan
+344 silly finalize /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/raw-socket
+345 silly finalize /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/net-ping
+346 silly doSerial build 3
+347 silly build nan
+348 info linkStuff nan@2.0.9
+349 silly linkStuff nan@2.0.9 has /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules as its parent node_modules
+350 verbose linkBins nan@2.0.9
+351 verbose linkMans nan@2.0.9
+352 verbose rebuildBundles nan@2.0.9
+353 silly build raw-socket
+354 info linkStuff raw-socket@1.4.0
+355 silly linkStuff raw-socket@1.4.0 has /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules as its parent node_modules
+356 verbose linkBins raw-socket@1.4.0
+357 verbose linkMans raw-socket@1.4.0
+358 verbose rebuildBundles raw-socket@1.4.0
+359 silly build net-ping
+360 info linkStuff net-ping@1.1.12
+361 silly linkStuff net-ping@1.1.12 has /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules as its parent node_modules
+362 verbose linkBins net-ping@1.1.12
+363 verbose linkMans net-ping@1.1.12
+364 verbose rebuildBundles net-ping@1.1.12
+365 silly doSerial global-link 0
+366 silly doParallel update-linked 0
+367 silly doSerial install 3
+368 silly install nan /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/nan-a7af2bc1d4ddad49d3eb061f77789a70
+369 info lifecycle nan@2.0.9~install: nan@2.0.9
+370 silly lifecycle nan@2.0.9~install: no script for install, continuing
+371 silly install raw-socket /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging/raw-socket-812e3ff47018dd64932f94181fda4168
+372 info lifecycle raw-socket@1.4.0~install: raw-socket@1.4.0
+373 verbose lifecycle raw-socket@1.4.0~install: unsafe-perm in lifecycle true
+374 verbose lifecycle raw-socket@1.4.0~install: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/raw-socket/node_modules/.bin:/Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.bin:/Users/joshua.ledbetter/.rvm/gems/ruby-2.2.1/bin:/Users/joshua.ledbetter/.rvm/gems/ruby-2.2.1@global/bin:/Users/joshua.ledbetter/.rvm/rubies/ruby-2.2.1/bin:/svnwork/svnscripts/trunk/working/bin:/svnwork/techservices/trunk/working/tools/bin:/opt/idea/bin:/tools/xmlbeans-2.5.0/bin:/svnwork/techservices/trunk/working/tools/bin/pybv:/opt/maven/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/joshua.ledbetter/.rvm/bin:/usr/local/Cellar/mongodb/3.0.6/bin
+375 verbose lifecycle raw-socket@1.4.0~install: CWD: /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/raw-socket
+376 silly lifecycle raw-socket@1.4.0~install: Args: [ '-c', 'node-gyp rebuild' ]
+377 silly lifecycle raw-socket@1.4.0~install: Returned: code: 1  signal: null
+378 info lifecycle raw-socket@1.4.0~install: Failed to exec install script
+379 verbose unlock done using /Users/joshua.ledbetter/.npm/_locks/staging-bdb56aff91b574ec.lock for /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node/node_modules/.staging
+380 silly rollbackFailedOptional Starting
+381 silly rollbackFailedOptional Finishing
+382 silly runTopLevelLifecycles Starting
+383 silly runTopLevelLifecycles Finishing
+384 silly install printInstalled
+385 warn EPACKAGEJSON ping-node@1.0.0 No description
+386 warn EPACKAGEJSON ping-node@1.0.0 No repository field.
+387 verbose stack Error: raw-socket@1.4.0 install: `node-gyp rebuild`
+387 verbose stack Exit status 1
+387 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
+387 verbose stack     at emitTwo (events.js:87:13)
+387 verbose stack     at EventEmitter.emit (events.js:172:7)
+387 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+387 verbose stack     at emitTwo (events.js:87:13)
+387 verbose stack     at ChildProcess.emit (events.js:172:7)
+387 verbose stack     at maybeClose (internal/child_process.js:818:16)
+387 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+388 verbose pkgid raw-socket@1.4.0
+389 verbose cwd /Users/joshua.ledbetter/Desktop/Personal_Code/ping-node
+390 error Darwin 14.5.0
+391 error argv "/usr/local/Cellar/node/0.12.7/bin/node" "/usr/local/bin/npm" "install" "net-ping" "-save"
+392 error node v5.0.0
+393 error npm  v3.3.6
+394 error code ELIFECYCLE
+395 error raw-socket@1.4.0 install: `node-gyp rebuild`
+395 error Exit status 1
+396 error Failed at the raw-socket@1.4.0 install script 'node-gyp rebuild'.
+396 error This is most likely a problem with the raw-socket package,
+396 error not with npm itself.
+396 error Tell the author that this fails on your system:
+396 error     node-gyp rebuild
+396 error You can get their info via:
+396 error     npm owner ls raw-socket
+396 error There is likely additional logging output above.
+397 verbose exit [ 1, true ]

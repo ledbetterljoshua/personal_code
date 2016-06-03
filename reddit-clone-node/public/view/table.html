@@ -1,0 +1,59 @@
+<!--Main-->
+<div ng-repeat="reddit in reddits">
+    <div class="col-md-6 col-sx-12">
+        <div class="reddit">
+            <div class="votebuttons"
+                 title="{{ reddit.votesCount }} Votes">
+                <div ng-click="upEntry(reddit.id)">
+                    <img src="images/caret-top.svg" />
+                </div>
+                <span class="vote_sum">{{ reddit.rating.value }}</span>
+                <div ng-click="downEntry(reddit.id)">
+                    <img src="images/caret-bottom.svg" />
+                </div>
+            </div>
+            <div class="reddit-wrapper">
+                <a href="{{reddit.url}}">
+                    <h2>{{ reddit.title }}</h2>
+                </a>
+
+                <p>
+                    {{ reddit.timeAgo }} by <em>{{ reddit.author }}</em>
+                </p>
+                <div ng-hide="reddit.areCommentsVisible">
+                    <p>
+                        <em>
+                            <a href="" ng-click="reddit.areCommentsVisible = true">
+                                <p>{{reddit.commentsCount}} comments</p>
+                            </a>
+                        </em>
+                    </p>
+                </div>
+                <div ng-show="reddit.areCommentsVisible">
+                    <div class="redditComments row" ng-repeat="comment in reddit.comments">
+                        <div class="col-sx-4">
+                            <div class="votebuttons"
+                                 title="{{ comment.rating.value }} Votes">
+                                <div ng-click="upComment(comment.id, reddit.id)">
+                                    <img src="images/caret-top.svg" />
+                                </div>
+                                <span class="vote_sum">{{ comment.rating.value }}</span>
+                                <div ng-click="downComment(comment.id, reddit.id)">
+                                    <img src="images/caret-bottom.svg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sx-8 commentText">
+                                <p>{{comment.author}} {{comment.createTimeDisplay}}</p>
+                                <p>{{comment.text}}</p>
+                        </div>
+                    </div>
+                    <form class="commentForm" ng-show="isLoggedIn()"   ng-submit="reddit.submitNewComment();update();">
+                        <input placeholder="Your Comment" class="form-control" type="text" ng-model="reddit.newCommentText"><br>
+                        <input type="submit" value="Submit" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

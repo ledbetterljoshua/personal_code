@@ -1,0 +1,186 @@
+
+
+.highlightMenu--active {
+    display: inline-block;
+    visibility: visible;
+    transition: all 75ms ease-out,left 75ms ease-out;
+    -webkit-animation: upwards 180ms forwards linear;
+    animation: upwards 180ms forwards linear;
+}
+.highlightMenu {
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 75ms ease-out,left 75ms ease-out;
+}
+.highlightMenu-inner {
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(49,49,47,0.99), #262625);
+    background-repeat: repeat-x;
+    border-radius: 5px;
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    height: 37px;
+    padding: 0 16px;
+    color: rgba(0,0,0,0.44);
+    background: rgba(0,0,0,0);
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.15);
+    vertical-align: bottom;
+    white-space: nowrap;
+    text-rendering: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    border-radius: 999em;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+}
+.buttonSet .button--highlightMenu:first-child {
+    padding-left: 5px;
+}
+.buttonSet>.button--highlightMenu {
+    height: 42px;
+    line-height: 42px;
+}
+.buttonSet>.button--link, .buttonSet>.button--chromeless {
+    height: 37px;
+    line-height: 36px;
+}
+.buttonSet>.button, .buttonSet>.buttonSet-inner>.button {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.button--highlightMenu {
+    display: inline-block;
+    border: 0;
+    color: white;
+    box-sizing: content-box;
+    vertical-align: center;
+}
+.button--link, .button--chromeless {
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    line-height: inherit;
+    border-width: 0;
+    padding: 0;
+    vertical-align: baseline;
+    color: rgba(0,0,0,0.3);
+    white-space: normal;
+}
+.button, .button .icon:before, .button .svgIcon {
+    transition: 100ms background-color,100ms border-color,100ms color,100ms fill;
+}
+.icon {
+    font-family: "medium-icons";
+    font-weight: normal;
+    font-style: normal;
+    speak: none;
+    text-decoration: none;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.button .icon {
+    line-height: 100%;
+}
+.button.button--highlightMenu .icon:before, .button.button--highlightMenu .icon:after {
+    color: #fff;
+}
+.button--highlightMenu .icon--highlighter:before {
+    top: 0;
+}
+.button--highlightMenu .icon:before {
+    margin: 0;
+    color: #fff;
+    font-size: 22px;
+    line-height: 42px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+}
+.button .icon:before {
+    margin-right: 8px;
+    font-size: 20px;
+    line-height: 0;
+    position: relative;
+    top: 1px;
+    color: rgba(0,0,0,0.3);
+}
+.button--link>.icon:before, .button--chromeless>.icon:before {
+    color: rgba(0,0,0,0.44);
+}
+.icon--highlighter:before {
+    content: "\f13e";
+}
+.button--chromeless .icon--twitter:before {
+    top: 1px;
+}
+.button .icon--shrink:before, .button .icon--enlarge:before, .button .icon--twitter:before {
+    top: 3px;
+}
+.icon--twitter:before {
+    font-size: 21px;
+    position: relative;
+    top: 2px;
+}
+.icon--twitter:before {
+    content: "\f171";
+}
+.button--highlightMenuNotes .icon--notes {
+    position: relative;
+}
+.icon--notes:before {
+    content: "\f155";
+}
+
+
+.highlightMenu .highlightMenu-arrowClip {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    clip: rect(10px 20px 20px 0);
+    margin-left: -10px;
+}
+.highlightMenu .highlightMenu-arrowClip .highlightMenu-arrow {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #262625;
+    -webkit-transform: rotate(45deg) scale(.5);
+    -ms-transform: rotate(45deg) scale(.5);
+    transform: rotate(45deg) scale(.5);
+}
+button.button.button--chromeless.button--withIcon.button--highlightMenu {
+    padding: 0 7.5px;
+}
+.fa {
+    padding: 8px 1px;
+    font-size: 20px;
+    color: #fff;
+}
+.buttonSet .button--highlightMenu:first-child, button.button.button--chromeless.button--withIcon.button--highlightMenu.twitter {
+    border-right: 1px solid;
+}
+.buttonSet .button--highlightMenu:first-child {
+	padding-left: 5px !important;
+}
+
+

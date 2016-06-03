@@ -1,0 +1,369 @@
+body {
+	background: #000;
+	color: #fff;
+}
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    -webkit-filter: blur(20px) grayscale(20%);
+    z-index: 1;
+}
+div#div_language {
+    display: none;
+}
+.compact.marquee {
+    background: #000;
+    z-index: 999;
+    position: absolute;
+}
+div#transcription {
+    font-size: 0.5em;
+}
+body * {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.date.small.dimmed {
+    padding: 0 7px;
+}
+span.dayname {
+    display: block;
+}
+body,
+html {
+  background: #000;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: "HelveticaNeue-Light", sans-serif;
+  letter-spacing: -2px;
+  color: #fff;
+  font-size: 75px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricprecision;
+}
+#outer {
+	position: absolute;
+    top: -130px;
+    line-height: 20px;
+    font-size: 20px;
+    max-width: 263px;
+    max-height: 355px;
+    width: 263px;
+    height: 355px;
+    overflow: hidden;
+}
+ul {
+	list-style: none;
+}
+.ChatLog__message {
+    background-color: #403F3F;
+    padding: .5em;
+    border-radius: 4px;
+    font-weight: lighter;
+    max-width: 70%;
+}
+.ChatLog .ChatLog__entry {
+    margin: .5em;
+}
+.ChatLog__entry {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    max-width: 100%;
+    text-align: left;
+    margin: 11px 0;
+}
+.ChatLog__entry .ChatLog__message {
+    position: relative;
+    margin: 0 12px;
+}
+.ChatLog__entry .ChatLog__message::before {
+    position: absolute;
+    right: auto;
+    bottom: .6em;
+    left: -12px;
+    height: 0;
+    content: '';
+    border: 6px solid transparent;
+    border-right-color: #403F3F;
+    z-index: 2;
+}
+.ChatLog__entry.ChatLog__entry_mine .ChatLog__message::before {
+    right: -12px;
+    bottom: .6em;
+    left: auto;
+    border: 6px solid transparent;
+    border-left-color: #808080;
+}
+.ChatLog__entry.ChatLog__entry_mine {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+.ChatLog__entry.ChatLog__entry_mine .ChatLog__message {
+    border-top: 1px solid #B5B5B5;
+    border-bottom: 1px solid #B5B5B5;
+    background-color: #808080;
+    color: #fff;
+}
+ul#results {
+	position: absolute;
+    top: 0px;
+    line-height: 20px;
+    font-size: 20px;
+    max-width: 280px;
+    max-height: 360px;
+    width: 280px;
+    height: 360px;
+    overflow: scroll;
+    padding-left: 0;
+}
+span#final_span {
+    display: none;
+}
+span#interim_span {
+    display: none;
+}
+
+.wi {
+  line-height: 75px;
+}
+
+.top {
+  position: absolute;
+  top: 50px;
+}
+
+.left {
+  position: absolute;
+  left: 50px;
+}
+
+.right {
+  position: absolute;
+  right: 50px;
+  text-align: right;
+}
+
+.center-ver {
+  position: absolute;
+  top: 50%;
+  height: 200px;
+  margin-top: -100px;
+  line-height: 100px;
+}
+
+.lower-third {
+  position: absolute;
+  top: 66.666%;
+  height: 200px;
+  margin-top: -100px;
+  line-height: 100px;
+}
+div#container-ios9 {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    margin-top: 480px;
+}
+.center-hor {
+  position: absolute;
+  right: 50px;
+  left: 50px;
+  text-align: center;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 50px;
+}
+
+.xxsmall,
+.xsmall,
+.small {
+	font-family: "HelveticaNeue-Medium", sans-serif;
+	letter-spacing: 0;
+}
+
+.xxsmall {
+  font-size: 15px;
+}
+
+.xxsmall .wi {
+  line-height: 15px;
+}
+
+.xsmall {
+  font-size: 20px;
+}
+
+.xsmall .wi {
+  line-height: 20px;
+}
+
+.small {
+  font-size: 25px;
+}
+
+.small .wi {
+  line-height: 25px;
+}
+
+.medium {
+  font-size: 35px;
+  letter-spacing: -1px;
+  font-family: "HelveticaNeue-Light", sans-serif;
+}
+
+.medium .wi {
+  line-height: 35px;
+}
+
+.xdimmed {
+  color: #666;
+}
+
+.dimmed {
+  color: #aaa;
+}
+
+.light {
+  font-family: "HelveticaNeue-UltraLight", sans-serif;
+}
+
+.icon {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+  font-size: 45px;
+  padding-right: 5px;
+  font-weight: 100;
+  margin-right: 10px;
+}
+
+.icon-small {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: -10px;
+  font-weight: 100;
+}
+
+.time .sec {
+  font-size: 25px;
+  color: #666;
+  padding-left: 5px;
+  position: relative;
+  top: -35px;
+}
+
+.forecast-table {
+  float: right;
+  text-align: right;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.forecast-table .day,
+.forecast-table .temp-min,
+.forecast-table .temp-max {
+  width: 50px;
+  text-align: right;
+}
+
+.forecast-table .temp-max {
+  width: 60px;
+}
+
+.forecast-table .day {
+  color: #999;
+}
+
+.calendar-table {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.calendar-table .calendar-icon {
+  width: 1em;
+  min-width: 1em;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.calendar-table .days {
+  padding-left: 20px;
+  text-align: right;
+}
+
+.dishwasher {
+  background-color: white;
+  color: black;
+  margin: 0 200px;
+  font-size: 60px;
+  border-radius: 1000px;
+  border-radius: 1200px;
+  display: none;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-UltraLight';
+  src: url('font/HelveticaNeue-UltraLight.eot');
+  /* IE9 Compat Modes */
+  src: url('font/HelveticaNeue-UltraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('font/HelveticaNeue-UltraLight.woff') format('woff'), /* Modern Browsers */
+  url('font/HelveticaNeue-UltraLight.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('font/HelveticaNeue-UltraLight.svg#9453ea8da727d260bcdbfa605bdbb5d2') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Medium';
+  src: url('font/HelveticaNeue-Medium.eot');
+  /* IE9 Compat Modes */
+  src: url('font/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('font/HelveticaNeue-Medium.woff') format('woff'), /* Modern Browsers */
+  url('font/HelveticaNeue-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('font/HelveticaNeue-Medium.svg#d7af0fd9278f330eed98b60dddea7bd6') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Light';
+  src: url('font/HelveticaNeue-Light.eot');
+  /* IE9 Compat Modes */
+  src: url('font/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('font/HelveticaNeue-Light.woff') format('woff'), /* Modern Browsers */
+  url('font/HelveticaNeue-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('font/HelveticaNeue-Light.svg#7384ecabcada72f0e077cd45d8e1c705') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 200;
+}

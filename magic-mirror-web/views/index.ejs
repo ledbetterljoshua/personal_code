@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Magic Mirror</title>
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome-4.5.0/css/font-awesome.css"></link>
+	<link rel="stylesheet" type="text/css" href="/css/weather-icons-master/css/weather-icons.min.css"></link>
+	<link rel="stylesheet" type="text/css" href="/css/weather-icons-master/css/weather-icons-wind.min.css"></link>
+	<link rel="stylesheet" type="text/css" href="/css/main.css"></style>
+	<link rel="stylesheet" type="text/css" href="/css/pulse.css"></style>
+	<script src="/controllers/controller.js"></script>
+</head>
+<body>
+	<div id="container-ios9" class="container">
+		<div class="iphone-display"></div>
+	</div>
+	<div class="iconpulse"></div>
+	<div class="container">
+		<div class="top right">
+			<div class="windsun small dimmed"></div>
+			<div class="temp"></div>
+			<div class="forecast small dimmed"></div>
+		</div>
+		<div class="top left">
+			<div class="time" id="time"></div>
+			<div class="date small dimmed"></div>
+			<div class="calendar xxsmall"></div>
+		</div>
+		<div class="center-ver center-hor">
+			<!-- <div class="dishwasher light">Vaatwasser is klaar!</div> -->
+		</div>
+		<div class="lower-third center-hor">
+			<div id="transcription">How can I help you?</div>
+			<div id="outer">
+				<ul id="results">
+		          <span class="final" id="final_span"></span> <span class="interim" id="interim_span"></span>
+		        </ul>
+		    </div>
+		</div>
+		<div class="bottom center-hor">
+			<div class="news medium"></div>
+		</div>
+	</div>
+
+        <div class="compact marquee" id="div_language">
+          <select id="select_language" onchange="updateCountry()">
+            <option value="0">Afrikaans</option><option value="1">Bahasa Indonesia</option><option value="2">Bahasa Melayu</option><option value="3">Català</option><option value="4">Čeština</option><option value="5">Dansk</option><option value="6">Deutsch</option><option value="7">English</option><option value="8">Español</option><option value="9">Euskara</option><option value="10">Filipino</option><option value="11">Français</option><option value="12">Galego</option><option value="13">Hrvatski</option><option value="14">IsiZulu</option><option value="15">Íslenska</option><option value="16">Italiano</option><option value="17">Lietuvių</option><option value="18">Magyar</option><option value="19">Nederlands</option><option value="20">Norsk bokmål</option><option value="21">Polski</option><option value="22">Português</option><option value="23">Română</option><option value="24">Slovenščina</option><option value="25">Slovenčina</option><option value="26">Suomi</option><option value="27">Svenska</option><option value="28">Tiếng Việt</option><option value="29">Türkçe</option><option value="30">Ελληνικά</option><option value="31">български</option><option value="32">Pусский</option><option value="33">Српски</option><option value="34">Українська</option><option value="35">한국어</option><option value="36">中文</option><option value="37">日本語</option><option value="38">हिन्दी</option><option value="39">ภาษาไทย</option></select>&nbsp;&nbsp; <select id="select_dialect" style="visibility: visible;">
+            <option value="en-AU">Australia</option><option value="en-CA">Canada</option><option value="en-IN">India</option><option value="en-NZ">New Zealand</option><option value="en-ZA">South Africa</option><option value="en-GB">United Kingdom</option><option value="en-US">United States</option></select>
+        </div>
+      </div>
+
+<script src="js/siriwave.js"></script>
+<script src="js/siriwave9.js"></script>
+<script>
+	// var $siri_classic = document.getElementById('container-classic');
+	// var SW = new SiriWave({
+	// 	width: 259,
+	// 	height: 50,
+	// 	speed: 0.12,
+	// 	amplitude: 1,
+	// 	container: $siri_classic,
+	// 	autostart: true,
+	// });
+	var $siri_ios9 = document.getElementById('container-ios9');
+	var SW9 = new SiriWave9({
+		width: 259,
+		height: 40,
+		speed: 0.5,
+		amplitude: 1,
+		container: $siri_ios9,
+		autostart: true,
+	});
+</script>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.feedToJSON.js"></script>
+<script src="js/ical_parser.js"></script>
+<script src="js/moment-with-locales.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/rrule.js"></script>
+<script src="js/version/version.js"></script>
+<!-- <script src="js/calendar/calendar.js"></script> -->
+<!-- <script src="js/compliments/compliments.js"></script> -->
+<script src="js/weather/weather.js"></script>
+<script src="js/time/time.js"></script>
+<script src="js/news/news.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

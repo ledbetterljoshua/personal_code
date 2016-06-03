@@ -1,0 +1,14 @@
+<md-content>
+	<md-list flex="" role="list" class="flex">
+		<!-- ngRepeat: item in todos -->
+		<md-list-item class="md-3-line _md-no-proxy ng-scope" ng-repeat="thing in things" role="listitem">
+		  <img ng-src="https://material.angularjs.org/latest/img/list/60.jpeg?0" class="md-avatar" alt="Min Li Chan" src="https://material.angularjs.org/latest/img/list/60.jpeg?0">
+		  <div class="md-list-item-text layout-column" layout="column">
+		    <h3 ng-click="getInfo(thing._id)"  class="ng-binding">{{thing.title}}</h3>
+		    <h4 class="ng-binding">Brunch this weekend?</h4>
+		    <p class="ng-binding"> {{thing.description}}</p>
+		  </div>
+		  <md-divider></md-divider>
+		</md-list-item>
+	</md-list>
+</md-content>

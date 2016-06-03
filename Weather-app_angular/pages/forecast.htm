@@ -1,0 +1,56 @@
+<h1 class="title">forcast for {{ city }}</h1>
+<div class="row">
+    <div class="col-md-6 col-md-offser-3">
+        <h4 class="title">Forecast for your city</h4>
+        <div class="form-group">
+            <input ng-model="city" type="text" class="form-control" />
+        </div>
+        <a href="#/forecast" class="btn btn-primary">Get Your Forecast</a>
+    </div>
+</div>
+
+<hr />
+
+Days:   <a href="#/forecast/2" ng-class="{ 'bg-primary': days === '2' }">2</a> | 
+        <a href="#/forecast/5" ng-class="{ 'bg-primary': days === '5' }">5</a> | 
+        <a href="#/forecast/7" ng-class="{ 'bg-primary': days === '7' }">7</a> 
+
+<hr />
+
+<div ng-repeat="w in weatherResult.list">
+    
+    <div class="row">
+        <div class=" col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        {{convertToDate(w.dt) | date : 'MMM d, y'}}</h3>
+                </div>
+                <div class="palen-body">
+                    Daytime tempurature: {{ 
+                    covertToFahenheit(w.temp.day) }}
+                </div>
+                <div class="palen-body">
+                    Evening tempurature: {{ 
+                    covertToFahenheit(w.temp.eve) }}
+                </div>
+                <div class="palen-body">
+                    Max tempurature: {{ 
+                    covertToFahenheit(w.temp.max) }}
+                </div>
+                <div class="palen-body">
+                    Min tempurature: {{ 
+                    covertToFahenheit(w.temp.min) }}
+                </div>
+                <div class="palen-body">
+                    Morning tempurature: {{ 
+                    covertToFahenheit(w.temp.morn) }}
+                </div>
+                <div class="palen-body">
+                    Night tempurature: {{ 
+                    covertToFahenheit(w.temp.night) }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

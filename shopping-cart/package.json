@@ -1,0 +1,27 @@
+{
+  "name": "shopping-cart",
+  "version": "1.0.0",
+  "description": "a shopping cart built on nodeJs. Developed to futher my knowledge. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.12.4",
+    "browserify": "10.2.3",
+    "ejs": "^2.4.1",
+    "express": "4.12.3",
+    "express-session": "1.11.2",
+    "gulp": "3.8.11",
+    "gulp-browserify": "0.5.1",
+    "http-status": "0.1.8",
+    "kerberos": "0.0.19",
+    "mongoose": "4.0.3",
+    "passport": "0.2.2",
+    "passport-facebook": "2.0.0",
+    "underscore": "1.5.2",
+    "wagner-core": "0.1.0"
+  }
+}

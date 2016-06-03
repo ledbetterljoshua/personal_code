@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "CeraFinder",
+  "description": "Find the cera. Notice the username.",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "http://imgur.com/gallery/*", "https://imgur.com/gallery/*"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+  {
+    "matches": ["http://imgur.com/gallery/*", "https://imgur.com/gallery/*"],
+      "default_title": "do things",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html",
+      "js": ["popup.js"]
+  }
+  ]
+}

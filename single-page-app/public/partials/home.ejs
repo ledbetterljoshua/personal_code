@@ -1,0 +1,23 @@
+<div ng-controller="AppCtrl">
+	<div class="col-md-6 content fadeOutLeft">
+		<div class="container">
+			<div class="border-top"></div>
+			<div class="search md-whiteframe-2dp">
+				<form>
+					<input type="text" class="search" placeholder="Search...">
+				</form>
+
+			</div>
+			<div class="content">
+				<div ui-view="viewAll"></div>
+			</div>
+			<div class="footer">
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4 content">
+		<div class="fill-me">
+			<div ui-view="details"></div>
+		</div>
+	</div>
+</div>

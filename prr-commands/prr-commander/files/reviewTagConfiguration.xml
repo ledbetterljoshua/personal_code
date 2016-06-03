@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Tag Configuration -->
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util" xmlns:p="http://www.springframework.org/schema/p" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+	<bean name="" parent="" class="com.bazaarvoice.cca.config.TagConfiguration">
+
+		 <property name="usingExternalIDAsCategoryKey" value="true"/>
+
+	    <property name="dimensionExternalIDToTagListMap">
+	        <map>
+	            <!-- CATEGORY -->
+	            <entry key="">
+	                <list>
+	                    <bean p:externalID="" class="com.bazaarvoice.cca.config.TagDefinition"/>
+	                </list>
+	            </entry>
+	        </map>
+	    </property>
+
+	    <property name="dimensionListNameToDimensionExternalIDListMap">
+            <map>
+                <entry key="">
+                    <list>
+                        <value></value>
+                    </list>
+                </entry>
+            </map>
+        </property>
+
+        <property name="tagListNameToDimensionAndTagExternalIDListMap">
+            <map merge="true">
+                <entry key="">
+                    <list>
+                    	<value></value>
+                    </list>
+                </entry>
+            </map>
+        </property>
+
+        <property name="categoryKeyToDimensionAndTagListNameMap">
+            <map merge="true">
+                <entry key="">
+                    <list></list>
+                </entry>
+            </map>
+        </property>
+	</bean>
+
+</beans>
+
